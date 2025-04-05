@@ -184,17 +184,26 @@ if st.button("Calculate Vn"):
         if convert_units == 'N':
             vn_values = [vn * 1000 for vn in vn_values]
 
+        # Filter out negative Vn values
+        variable_values_filtered = []
+        vn_values_filtered = []
+        for v, vn in zip(variable_values, vn_values):
+            if vn > 0:
+                variable_values_filtered.append(v)
+                vn_values_filtered.append(vn)
+
+        # Plot
         fig, ax = plt.subplots()
-        ax.plot(variable_values, vn_values, label=f"Vn vs. {plot_variable}")
+        ax.plot(variable_values_filtered, vn_values_filtered, label=f"Vn vs. {plot_variable}", color='green')
         ax.set_xlabel(plot_variable)
         ax.set_ylabel(f"Vn ({convert_units})")
         ax.legend()
         ax.grid(True)
         st.pyplot(fig)
-
     else:
         st.error("Please input valid values for all parameters.")
 
+# Footer
 st.write("""
 ### Researchers:
 **Maher K. Abbas<sup>1</sup>**, and **Iman Kattoof Harith<sup>1</sup>**
