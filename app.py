@@ -22,7 +22,7 @@ def calculate_Vn(h, b, d, a, a_d, fck, rf, rv, rh, fyt, fyv, fyh):
 # Streamlit app interface
 st.set_page_config(
     page_title="Shear Capacity of RC Deep Beams (Vn) Calculator",
-    page_icon="https://github.com/MHR-u/Shear-Capacity-of-FRP-Members/blob/main/FRP_RC.png?raw=true",
+    page_icon="https://github.com/MHR-u/Deep_Beam/blob/main/Deep%20Beam.png?raw=true",
     layout="centered"
 )
 
@@ -81,7 +81,7 @@ st.markdown(f"""
     <div class="title-container">
         <div class="title-text">Shear Capacity of RC Deep Beams (Vn)</div>
         <div class="image-container">
-            <img src="https://github.com/MHR-u/Shear-Capacity-of-FRP-Members/blob/main/FRP_RC.png?raw=true" alt="Image">
+            <img src="https://github.com/MHR-u/Deep_Beam/blob/main/Deep%20Beam.png?raw=true" alt="Image">
         </div>
     </div>
     <hr>
