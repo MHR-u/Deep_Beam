@@ -204,7 +204,7 @@ if st.button("Calculate Vn"):
         st.error("Please input valid values for all parameters.")
 
 # Footer
-st.write("""
+# st.write("""
 ### Researchers:
 **Maher K. Abbas<sup>1</sup>**, and **Iman Kattoof Harith<sup>1</sup>**
 
