@@ -205,8 +205,8 @@ if st.button("Calculate Vn"):
 
 # Footer
 # st.write("""
-### Researchers:
-**Maher K. Abbas<sup>1</sup>**, and **Iman Kattoof Harith<sup>1</sup>**
+# ### Researchers:
+# **Maher K. Abbas<sup>1</sup>**, and **Iman Kattoof Harith<sup>1</sup>**
 
-<sup>1</sup>Civil Engineering Department, College of Engineering, Al-Qasim Green University, Babylon, 51013, Iraq. 
-""", unsafe_allow_html=True)
+# <sup>1</sup>Civil Engineering Department, College of Engineering, Al-Qasim Green University, Babylon, 51013, Iraq. 
+# """, unsafe_allow_html=True)
